@@ -1,7 +1,12 @@
 #!/bin/bash
 
-if [$i]
-then
-	grep -c $i
 
-fi	
+
+variableUn=$1;
+fichierBordel=$(</dev/stdin);
+
+grep -i $variableUn
+
+liste=$(grep -i $variableUn $fichierBordel); 
+
+echo $liste
